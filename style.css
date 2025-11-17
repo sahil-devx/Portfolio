@@ -53,7 +53,7 @@ body::before {
     font-weight:lighter;
     position:fixed;
     height:50px;
-    width:80%;
+    width:100%;
     top:1%;
     padding-left: 6px;
     padding-right: 6px;
@@ -88,8 +88,6 @@ body::before {
     border-radius: 15px;
     background-color:transparent;
     transition:all 0.2s ease-in-out;
-    width:10;
-
 }
 .nav-element:hover{
     background-color: rgb(12, 20, 57);
@@ -867,9 +865,6 @@ body::before {
     width: 30px;
 } 
 
-
-
-
 .visible {
     opacity: 1;
     transform:translate(0,0);
@@ -880,20 +875,42 @@ body::before {
 
 
 
-
 @media (max-width: 480px) {
   body,html{
     width:100%;
     overflow-x: hidden;
   }
-  #nav-bar {
-    scale: 0.7;
-    max-width: 90vw;
-    padding:5px;
+#nav-bar {
+    position: fixed;
+    top: 1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-wrap: nowrap; 
+    gap: 4px;
+
+    scale: 0.9;
+    transform-origin: top center;
+
+    padding: 4px;
+    overflow: hidden;
   }
-  .nav-element{
-    font-size:0.7rem;
+
+  .nav-element {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 4px 6px;
+    font-size: 0.65rem;
   }
+
 
   .intro {
     flex-direction: column;
@@ -904,12 +921,15 @@ body::before {
   }
 
   #p1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     padding: 20px;
     margin-top: 20px;
     width: 100vw;
   }
-
+#pix1-resume{
+    margin-left:0%;
+    margin-right:0%;
+}
   #pix1 {
     width: 85vw;
     height: auto;
@@ -927,6 +947,9 @@ body::before {
     transform: none;
     width: 70vw;
   }
+  .me-img-class{
+    scale:80%;
+  }
   #me-text-head{font-size:1.3rem}
   #me-text-foot{font-size:0.8rem}
 
@@ -934,6 +957,7 @@ body::before {
     flex-direction: column;
     gap: 20px;
     width: 100vw;
+    align-items:center;
   }
 
   .abt-bg {
@@ -964,6 +988,7 @@ body::before {
     margin-left: 5%;
     margin-right: 5%;
     width: 90vw;
+    align-items:center;
   }
 
   .project {
@@ -980,6 +1005,9 @@ body::before {
   #contact-set {
     width: 80vw;
     min-width: unset;
+  }
+  .contact-text{
+    font-size:0.5rem;
   }
 
   .mail-set {
@@ -1005,7 +1033,7 @@ body::before {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1264px) {
   body, html {
     overflow-x: hidden;
     width: 100vw;
@@ -1021,14 +1049,26 @@ body::before {
   }
   .intro {
     gap: 40px;
+    margin-top:30px;
+    flex-direction:column;
     flex-wrap: wrap;
     text-align: center;
+    width: 80vw;
+    align-items:center;
+  }
+  #p1 {
+    font-size: 1.8rem;
+    padding: 20px;
+    margin-top: 20px;
     width: 100vw;
   }
-
   #pix1 {
     width: 60vw;
     height: auto;
+  }
+  #pix1-resume{
+    margin-left:0%;
+    margin-right:0%;
   }
 
   .me-bg {
@@ -1097,4 +1137,38 @@ body::before {
 body {
     overflow-x: hidden;
     width: 100vw;
+}
+
+
+@media (max-width: 480px) {
+  #nav-bar {
+    position: fixed;
+    top: 1%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-wrap: nowrap; 
+    gap: 4px;
+
+    scale: 0.9;
+    transform-origin: top center;
+
+    padding: 4px;
+    overflow: hidden;
+  }
+
+  .nav-element {
+    flex: 0 0 auto;
+    width: auto !important;
+    padding: 4px 6px;
+    font-size: 0.65rem;
+  }
 }
