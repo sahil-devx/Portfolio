@@ -44,6 +44,7 @@ window.addEventListener('scroll', () => {
   handleScrollForElements('.abt-bg');
   handleScrollForElements('.me');
   handleScrollForElements('.elements-set');
+  handleScrollForElements('.skill');
   handleScrollForElements('.hire');
   handleScrollForElements('.project');
 });
@@ -52,14 +53,7 @@ window.addEventListener('load', () => {
   handleScrollForElements('.me');
   handleScrollForElements('.abt-bg');
   handleScrollForElements('.elements-set');
+  handleScrollForElements('.skill');
   handleScrollForElements('.project');
   handleScrollForElements('.hire');
 });
-
-
-
-
-
-
-
-zz

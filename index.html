@@ -11,10 +11,12 @@
 </head>
 <body>
         <div class="intro" id="home">
-                <span id="p1">Hello,I'm Sahil<br>Satpute<br><span class="text-ani">Learning<br>Full Stack<br>Software & Web Devlopment</span></span>               
+                <span id="p1">Hello,I'm Sahil<br>Satpute<br><span class="text-ani">Learning<br>Full Stack<br>Software Devlopment</span></span>               
                 <img id="pix1" src="pix1.gif" alt="">
         </div>
-        <div class="me-bg">
+
+        
+        <div class="me-bg" id="about">
             <img id="me-img" class="me-img-class me" alt="This is how i look" src="face.jpg">
             <div class="me-texts-class me">
                 <div id="me-text-head" class="text-ani">NICE TO SEE YOU HERE</div>
@@ -23,9 +25,10 @@
         </div>
         <nav id="nav-bar">
             <a href="#home"><div class="nav-element" >Home</div></a>
+            <a href="#about"><div class="nav-element" >About</div></a>
             <a href="#skills"><div class="nav-element" >Skills</div></a>
             <a href="#projects"><div class="nav-element" >Projects</div></a>
-            <a href="#contact-me"><div class="nav-element" >Contact</div></a>
+            <a href="#contact"><div class="nav-element" >Contact</div></a>
         </nav> 
 
     <div id="abt-set">
@@ -49,15 +52,38 @@
         <hr class="section-lines" id="skills"></hr>
         <h3 class="topics">What I can Do ?</h3>
         <div class="elements-set" >
-            <div class="element" id="Py"></div>
-            <div class="element" id="css"></div>
-            <div class="element" id="Java"></div>
-            <div class="element" id="html"></div>
-            <div class="element" id="c"></div>
-            <div class="element" id="JS"></div>
-            <div class="element" id="mysql"></div>
-            <div class="element" id="nodejs"></div>
-            <p class="note">I wish could say that I have accomplished all detailed knowledge about these skills but that wouldn't be true.<br>But I can surely assure you that I can and I will fill the gap between desent and mastered in any particular skill if needed.</p>
+            <div class="skill">
+                <div class="element" id="Py"></div>
+                <div class="percentage-bar"><div class="per-ani percent" id="Py-bar"></div><span class="percentage">80%</span></div>
+            </div>
+            <div class="skill">
+                <div class="element" id="css"></div>
+                <div class="percentage-bar"><div class="per-ani percent" id="css-bar"></div><span class="percentage">85%</span></div>
+            </div>
+            <div class="skill">
+                <div class="element" id="Java"></div>
+                <div class="percentage-bar"><div class="per-ani percent" id="Java-bar"></div><span class="percentage">80%</span></div>
+            </div>
+            <div class="skill">
+                <div class="element" id="html"></div>
+                <div class="percentage-bar"><div class="per-ani percent" id="html-bar"></div><span class="percentage">96%</span></div>
+            </div>
+            <div class="skill">
+                <div class="element" id="c"></div>
+                <div class="percentage-bar"><div class="per-ani percent" id="c-bar"></div><span class="percentage">97%</span></div>
+            </div>
+            <div class="skill">
+                <div class="element" id="JS"></div>
+                <div class="percentage-bar"><div class="per-ani percent" id="JS-bar"></div><span class="percentage">50%</span></div>
+            </div>
+            <div class="skill">
+                <div class="element" id="mysql"></div>
+                <div class="percentage-bar"><div class="per-ani percent" id="mysql-bar"></div><span class="percentage">68%</span></div>
+            </div>
+            <div class="skill">
+                <div class="element" id="nodejs"></div>
+                <div class="percentage-bar"><div class="per-ani percent" id="nodejs-bar"></div><span class="percentage">50%</span></div>
+            </div>
         </div>
         <script src="scroll.js"></script>
         <hr class="section-lines" id="projects"></hr>
@@ -65,45 +91,68 @@
         <h3 class="topics">What I did ?</h3>
         <div class="project-set">
             <div class="project pro1">
-                    <img class="pro-img" src="p1img1.png" alt="">
-                    <span class="pro-name text-ani">Typing Speed Tester</span>
+                    <img class="pro-img" id="pro-img" src="p1img1.png" alt="">
+                    <span class="pro-name">Typing Speed Tester</span>
                     <p class="pro-text">A Full Stack web with login systems which calculates the typing speed and accuracy using legit calculations</p>
+                    <div class="skills-used">
+                        <div class="skl-used">HTML</div>
+                        <div class="skl-used">CSS</div>
+                        <div class="skl-used">JS</div>
+                        <div class="skl-used">PHP</div>
+                    </div>
                     <div id="pro-btns">
                         <a class="pro-btn" href="https://sahil-devx.github.io/TypingSpeedTester/" target="_blank" rel="noopener noreferrer">Link</a>            
-                        <a class="pro-btn" href="/">Details</a>            
+                        <a class="pro-btn" href="/">Source code</a>            
                     </div>
             </div>
-            <div class="project pro2"></div>
-            <div class="project pro3"></div>
+            <div class="project pro2">
+                <p class="pro-text">Upcoming</p>
+            </div>
+            <div class="project pro3">                    
+                <p class="pro-text">Upcoming</p>
+            </div>
         </div>
-        <hr class="section-lines" id="contact-me"></hr>
-        <div class="contact-set" id="contact">
-            <form action="https://formsubmit.co/satputesahil8186@gmail.com" method="POST">
-                <h3 id="cont-heading">Contact Me <span class="text-ani" >HERE</span></h3>
-                <div id="contact-div">
-                    <input type="email" id="email" placeholder="Enter your email here" required>
-                    <textarea id="message" name="message" placeholder="Enter your message here" required></textarea>
-                    <button type="submit" id="send" class="btn-grad">Send<i class="fa-solid fa-paper-plane"></i></button>
+        
+        
+        <span id="random-text1">Feel Free To Ask Me Any Questions You Want. I Usually Respond within 10 hours. Thanks For Being Here !!!</span>
+        <div class="contact-boxes" id="contact">
+            
+            <div id="contact-set">
+                <div class="contact-items"><i class="fa-solid fa-phone contact-icon"></i>
+                    <span class="contact-heading">Phone</span>
+                    <span class="contact-text">+91 9373743892</span>
                 </div>
-            </form>
+                <div class="contact-items"><i class="fa-solid fa-envelope contact-icon"></i>
+                    <span class="contact-heading">Email</span>
+                    <span class="contact-text">satputesahil8186@gmail.com</span>
+                </div>
+                <div class="contact-items"><i class="fa-solid fa-location-dot contact-icon"></i>
+                    <span class="contact-heading">Location</span>
+                    <span class="contact-text">Dhayari, Pune, Maharashtra</span>
+                </div>
+            </div>
+
+            <div class="mail-set" id="mail">
+                <h3 id="mail-heading">Contact Me <span class="text-ani" >HERE</span></h3>
+                <div id="mail-div">
+                    <input class="mail-items"type="email" id="email" placeholder="Enter your email here" required>
+                    <textarea class="mail-items"id="message" name="message" placeholder="Enter your message here" required></textarea>
+                    <button class="mail-items"type="submit" id="send" class="btn-grad">Send<i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
         </div>
+        
         <div class="foot">
             <a  class="prof-link" href="https://www.instagram.com/saahhhhiiiilll?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img src="instagram.png" alt="Instagram" class="profiles">
+                <i class="fa-brands fa-linkedin-in pfp-icon"></i>
             </a>
             <a  class="prof-link" href="https://www.instagram.com/saahhhhiiiilll?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img src="whatsapp.png" alt="whatsapp" class="profiles" >
+                <i class="fa-brands fa-instagram pfp-icon "></i>
             </a>
             <a  class="prof-link" href="https://www.instagram.com/saahhhhiiiilll?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img src="linkedin.png" alt="Linkedin" class="profiles" >
+                <i class="fa-brands fa-github pfp-icon"></i>
             </a>
             <a class="prof-link" href="https://www.instagram.com/saahhhhiiiilll?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img src="twitter.png" alt="Twitter" class="profiles" >
+                <i class="fa-brands fa-twitter pfp-icon"></i>
             </a>
-
         </div>
-
-
-
-
-
