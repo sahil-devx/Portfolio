@@ -397,18 +397,25 @@ body::before {
     overflow:hidden;
     transition:all 0.4s ease-out;
 }
+.skill:hover{
+    scale:103%;
+}
 .element{
     height:35px;
     width:70px;
-    color:rgb(0, 0, 0);
-    background-color: white;
+    color:rgb(115, 0, 255);
+    background-color: transparent;
     border:6px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     border-radius:10px;
-    border-color:gray;
-    font-size:10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border:#6633ff , 1px ,solid;
+    font-size:12px;
+    box-shadow: 5px 5px 10px rgba(0, 17, 142, 0.3);
     background-position: center;
     background-repeat: no-repeat;
+    transition:all 0.2s ease-out;
 }
 .percentage-bar{
     display:flex;
@@ -446,39 +453,7 @@ body::before {
 .element:hover{
     background-color:rgb(224, 222, 222);
 }
-#css {
-    background-image: url('css.png');
-    background-size: 70%;
-  }
-#Java {
-    background-image: url('java.png');
-    background-size: 47%;
-}
-#Py {
-    background-image: url('python.png');
-    background-size: 45%;
-}
-#html {
-    background-image: url('html.png');
-    background-size: 40%;
-}
-#c {
-    background-image: url('C.png');
-    background-size: 40%;
-}
-#mysql {
-    background-image: url('mysql.png');
-    background-size: 100%;
 
-}
-#nodejs {
-    background-image: url('nodejs.png');
-    background-size: 70%;
-}
-#JS {
-    background-image: url('JavaScript.png');
-    background-size: 70%;
-}
 
 .per-ani {
     background: linear-gradient(270deg, #0eabf8, #6506ff, #ac22eb);
@@ -612,18 +587,10 @@ body::before {
     background:rgba(74, 79, 211, 0.386);
     cursor:default;
 }
-#pro-btns{
-    margin-top:30px;
-    margin-bottom:30px;
-    display:flex;
-    gap:50px;
-    justify-content:space-evenly;
-    align-items:center;
-    flex-direction:row;
-}
+
 .pro-btn{
     border-radius:15px;
-    border:#4ddfea,solid,2px;
+    border:#0eabf8,solid,2px;
     color:white;
     width:90px;
     height:30px;
@@ -633,6 +600,13 @@ body::before {
     text-decoration:none;
     justify-content:center;
     align-items:center;
+    margin:20px;
+    transition:all 0.2s ease-in-out;
+}
+.pro-btn:hover{
+    background-color:#0eabf8;
+    color:black;
+    font-size:0.8rem;
 }
 
 .pro1{
