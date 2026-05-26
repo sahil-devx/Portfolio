@@ -428,14 +428,15 @@ body::before {
     border:#27324e,solid,2px;
 }
 
-#Py-bar{width:80%}
-#css-bar{width:85%}
-#Java-bar{width:80%}
-#html-bar{width:96%}
-#c-bar{width:97%}
-#JS-bar{width:50%}
-#mysql-bar{width:68%}
-#nodejs-bar{width:50%}
+#Py-bar{width:70%}
+#css-bar{width:95%}
+#Java-bar{width:70%}
+#html-bar{width:95%}
+#c-bar{width:95%}
+#JS-bar{width:95%}
+#mysql-bar{width:80%}
+#nodejs-bar{width:95%}
+#mongodb-bar{width:95%}
 
 .percentage {
   position: relative;
